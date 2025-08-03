@@ -8,23 +8,11 @@ document.addEventListener("DOMContentLoaded", (event) =>{
   let heroSplit = new SplitText(heroText, {type:"chars, lines, words"})
   gsap.from(heroSplit.lines, {yPercent:100, opacity:0, duration:1.2, stagger:{each:0.08, from:"top"}})
 
+  ScrollSmoother.create({
+    smooth:1,
+    effects:true,
+    wrapper: "#page-wrapper",
+    content:"#main-wrapper"
+  });
+
 })
-
-// document.addEventListener("DOMContentLoaded", () => {
-//   gsap.registerPlugin(ScrollSmoother, ScrollTrigger, SplitText);
-
-//   // Grab element
-//   let heroText = document.getElementById("hero-t");
-
-//   // Split text
-//   let heroSplit = SplitText.create(heroText, { type: "chars, words, lines" });
-
-//   // Animate lines
-//   gsap.from(heroSplit.lines, {
-//     yPercent: 100,
-//     opacity: 0,
-//     duration: 1.2,
-//     ease: "power3.out",
-//     stagger: 0.05
-//   });
-// });
