@@ -1,7 +1,7 @@
 /* Add resets and global styling of the project*/
 
   h1{
-    @apply font-bold text-8xl tracking-tighter leading-[0.9];
+    @apply font-submain font-bold text-8xl tracking-tighter leading-[0.9];
   }
 
   h2{

@@ -1,15 +1,18 @@
 /* For tokens and variables of project*/
-
-@import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mozilla+Headline:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
 
 @theme{
   --color-dark-strong: rgba(0, 0, 0, 0,9);
-  --color-dark-weak: rgba(0, 0, 0, 0.2);
+  --color-white-weak: rgba(255, 255, 255, 0.8);
   --color-tatiary: (0, 0, 0, 0.4);
 
   /*Base fonts for project*/
   --font-main: "Forum", serif;
   --font-submain:  "Bodoni Moda", serif;
+  --font-menu: "Bodoni Moda", serif;
+
+  /*aspect ratio*/
+  --aspect-ratio: 2/2.4;
 }
