@@ -3,6 +3,13 @@ document.addEventListener("DOMContentLoaded", (event) =>{
   gsap.registerPlugin(ScrollSmoother, ScrollTrigger, SplitText) 
   //Gsap code goes here
 
+  ScrollSmoother.create({
+    smooth:1,
+    effects:true,
+    wrapper: "#page-wrapper",
+    content:"#main-wrapper"
+  });
+
   let heroText = document.getElementById("hero-t");
 
   let heroSplit = new SplitText(heroText, {type:"chars, lines, words"})
@@ -113,17 +120,7 @@ let hoverTl = gsap.timeline({});
 
   });
 
-
-
-
-  ScrollSmoother.create({
-    smooth:1,
-    effects:true,
-    wrapper: "#page-wrapper",
-    content:"#main-wrapper"
-  });
-
-})
+});
 
 
   // //for closing menu, click close button
