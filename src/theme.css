@@ -3,16 +3,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Mozilla+Headline:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
 
+@font-face{
+  font-family: Doto;
+  src: url("./fonts/Doto-Medium.ttf")
+}
+
+@font-face{
+  font-family: Satoshi;
+  src: url("./fonts/Satoshi-Variable.woff2")
+}
+
+
 @theme{
   --color-dark-strong: rgba(0, 0, 0, 0,9);
   --color-white-weak: rgba(255, 255, 255, 0.8);
   --color-tatiary: (0, 0, 0, 0.4);
+  --color-awwards: #ffe0bc;
 
   /*Base fonts for project*/
   --font-main: "Forum", serif;
   --font-submain:  "Bodoni Moda", serif;
   --font-menu: "Bodoni Moda", serif;
+  --font-bodo: Doto, sans-serif;
+  --font-satoshi: Satoshi, sans-serif;
 
   /*aspect ratio*/
   --aspect-ratio: 2/2.4;
+
+  /*SPacers for layout*/
+  --spacer-medium: 190px;
 }

@@ -1,0 +1,8 @@
+.link-mask{
+  overflow: hidden;
+  position: relative;
+}
+
+.link-mask.show-image {
+  overflow: visible;
+}

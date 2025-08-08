@@ -1,7 +1,7 @@
 /* Add resets and global styling of the project*/
 
   h1{
-    @apply font-submain font-bold text-8xl tracking-tighter leading-[0.9];
+    @apply font-satoshi font-bold text-[10vw] tracking-[-0.05em] leading-[0.9];
   }
 
   h2{
@@ -9,11 +9,15 @@
   }
 
   h3{
-    @apply font-bold text-2xl tracking-normal;
+    @apply font-medium text-3xl tracking-tighter;
   }
 
   h4{
     @apply font-bold text-xl tracking-normal;
+  }
+
+  .paragraph-24{
+    @apply text-xl font-medium tracking-tight;
   }
 
 @layer utilities {
@@ -37,4 +41,11 @@
     @apply h-10 px-4 py-2 rounded-2xl bg-white text-gray-800
   }
 
+  .link-mask{
+    @apply overflow-hidden
+  }
+
+  .link-mask.show-item{
+    @apply overflow-visible
+  }
 }
